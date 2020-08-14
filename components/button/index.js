@@ -2,14 +2,19 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 const StyledButton = styled.button`
-  background-color: ${(props) => props.theme.colors[props.type]};
-
   ${(props) => props.type === 'primary' && css`
+    background-color: ${props.theme.colors.primary};
     color: ${props.theme.colors.white};
+    border: 0;
+  `}
+
+  ${(props) => props.type === 'secondary' && css`
+    background-color: ${props.theme.colors.white};
+    color: ${props.theme.colors.primary};
+    border: 1px solid ${props.theme.colors.primary};
   `}
 
   border-radius: 2px;
-  border: 0;
   padding: 0 30px;
   height: 40px;
   outline: none;

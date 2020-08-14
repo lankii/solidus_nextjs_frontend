@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { useApollo } from '../lib/apolloClient'
 
-const theme = {
+export const theme = {
   colors: {
     accent: '#0070f3'
   }

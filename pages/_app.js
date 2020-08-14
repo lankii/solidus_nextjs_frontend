@@ -5,7 +5,9 @@ import { useApollo } from '../lib/apolloClient'
 
 export const theme = {
   colors: {
-    accent: '#0070f3'
+    primary: '#3C76f0',
+    accent: '#0070f3',
+    white: '#ffffff'
   }
 }
 

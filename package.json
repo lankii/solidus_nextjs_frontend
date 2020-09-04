@@ -7,7 +7,9 @@
     ],
     "globals": [
       "withTheme",
-      "render"
+      "render",
+      "cy",
+      "Cypress"
     ]
   },
   "scripts": {
